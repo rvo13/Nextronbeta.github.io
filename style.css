@@ -1,0 +1,54 @@
+@media screen and (max-width:767px) {
+  
+  body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #31363F;
+}
+
+
+
+  #container-logo-loading {
+    background: #B5C0D0;
+    width: 320px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    border: 1px solid #F5E8DD;
+    border-radius: 4px;
+    position: relative;
+    top: 130px;
+  }
+  
+  #text {
+    color: white;
+    margin-top: 20px;
+    font-family: "Kanit", sans-serif;
+  }
+  
+
+  #logo-loading {
+    text-align: center;
+    perspective: 1000px;
+
+  }
+
+
+
+  #logo {
+    width: 200px;
+    transform-style: preserve-3d;
+  animation: rotateLogo 4s linear infinite; /* 4s adalah durasi rotasi, sesuaikan sesuai kebutuhan */
+
+  }
+  
+  @keyframes rotateLogo {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+  
+
+}
